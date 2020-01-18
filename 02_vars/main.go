@@ -24,6 +24,9 @@ func main() {
 	// shorthand, same as var
 	from := "USA"
 
-	fmt.Println(name, age, from)
+	// multiple assignments one line
+	a, b, c := 1, 2, 3
+
+	fmt.Println(name, age, from, a, b, c)
 	fmt.Printf("type: %T", isEmployed) // get type and string formatting
 }
