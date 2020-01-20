@@ -20,8 +20,24 @@ func swapVals(a, b int) (result1, result2 int) {
 	return
 }
 
+// variadic functions take a number of params
+// Println is an example : Println(a, b, c ...)
+func adder(numbers ...int) int {
+	sum := 0
+	for _, number := range numbers {
+		sum += number
+	}
+	return sum
+}
+
 func main() {
 	fmt.Println(factorial(5))
 	fmt.Println(sum(5, 3))
 	fmt.Println(swapVals(5, 3))
+
+	fmt.Println(adder(1, 2, 3, 4))
+
+	// variadic functions can also be applied to slices
+	numbers := []int{1, 2, 3, 4}
+	fmt.Println(adder(numbers...))
 }
