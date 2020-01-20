@@ -10,14 +10,10 @@ func main() {
 		i++
 	}
 
-	fmt.Println("<--------------------------------------->")
-
 	// short method
 	for i := 1; i <= 10; i++ {
 		fmt.Printf("Number: %d\n", i)
 	}
-
-	fmt.Println("<--------------------------------------->")
 
 	// fizzbuzz
 	// every multiple of 3 output fizz
