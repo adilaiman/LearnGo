@@ -37,4 +37,10 @@ func main() {
 	fmt.Println(person1.age)
 	person1.changeAge(25)
 	fmt.Println(person1.age)
+
+	// pointers
+	person1Ptr := &person1
+	fmt.Println(person1Ptr.firstName)
+	person1Ptr.firstName = "fizz"
+	fmt.Println(person1.firstName)
 }
