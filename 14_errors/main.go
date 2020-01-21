@@ -16,4 +16,11 @@ func sqrt(number float64) (result float64, err error) {
 func main() {
 	fmt.Println(sqrt(-1))
 	fmt.Println(sqrt(16))
+
+	res, err := sqrt(64)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(res)
+	}
 }
